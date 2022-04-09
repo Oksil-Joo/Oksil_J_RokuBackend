@@ -21,7 +21,7 @@ let pool = sql.createPool({
 //a route with /:text is a dynamic route
 // what comes after the colon is a route parameter
 //can be used lik a variable in your JS code function(arg)
-router.post('/getone', (req, res) => {
+router.get('/getone/:user', (req, res) => {
     console.log(`hit the user route: the user is ${req.body}`);
 
     pool.getConnection((err, connection) => {
@@ -47,7 +47,7 @@ router.post('/getone', (req, res) => {
                 loginResult.field = 'password'; //tell the UI which field is wrong
                 loginResult.action = 'retry';
             } else {
-                loginResult.action = 'authenticate';
+                loginResult.message = 'authenticate';
             }
     
             //if they DO match, you're in!
