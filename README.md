@@ -1,5 +1,5 @@
 
-# Roku Flashback Streaming App
+# Roku Flashback Streaming Backend
 ![mainRoku](https://user-images.githubusercontent.com/72535594/145485291-81e1a99c-2bbe-492d-968b-413c2811790f.jpg)<br/>
 ### Concept
 This site is divided into adults and children and provides streaming. The main page has a login menu, and the Roku welcome page opens. When a user logs in, the page is entered at the appropriate age group, and it is created using **MAMP, NODE, JavaScript, SASS, EXPRESS, SQL, and Vue CLI** so that you can view the video by clicking on the avata.
